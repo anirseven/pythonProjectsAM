@@ -17,7 +17,7 @@ pipeline {
         }
 		stage('hello') {
 			steps {
-				bat 'pytest pythonProject -ra --html="HTMLPyTestReport.html"'
+				bat 'python pytest'
       }
     }
     }
