@@ -17,6 +17,7 @@ pipeline {
         }
 		stage('hello') {
 			steps {
+				cd pythonProject
 				bat 'python -m pytest'
       }
     }
